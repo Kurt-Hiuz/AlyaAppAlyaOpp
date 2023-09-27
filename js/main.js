@@ -36,7 +36,7 @@ searchBtn.addEventListener("click", () => {
       const wind = document.querySelector(".weather__details .wind span");
 
       image.src =
-        "/assets/images/weather-icons/" + json.weather[0].icon + ".png";
+        "./assets/images/weather-icons/" + json.weather[0].icon + ".png";
 
       temperature.innerHTML = `${parseInt(json.main.temp)}<span>℃</span>`;
       description.innerHTML = `${json.weather[0].description}`;
