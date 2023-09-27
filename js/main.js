@@ -47,7 +47,7 @@ searchBtn.addEventListener("click", () => {
       weatherDetails.style.display = "";
       weatherHeader.classList.add("fade-in-animation");
       weatherDetails.classList.add("fade-in-animation");
-      container.style.height = "650px";
+      container.style.height = "630px";
     })
   );
 });
