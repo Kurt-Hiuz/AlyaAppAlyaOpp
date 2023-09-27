@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/fontawesome.min.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <title>Alya-app Alya-opp</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="settings-box">
+            <div class="question-box">
+                <i class="fa-brands fa-canadian-maple-leaf"></i>
+                <p>Куда пойдём?</p>
+                <button class="fa fa-search"></button>
+            </div>
+
+            <div class="time">
+                <p>Мы гуляем с </p>
+                <input type="time" name="start-time-input" id="startTimeInput">
+                <p>до</p>
+                <input type="time" name="start-time-input" id="startTimeInput">
+            </div>
+
+            <div class="leisure">
+                <select name="leisure-select" id="leisureSelect">
+                    <option value="" hidden disabled selected>Мы хотим..</option>
+                    <option value="go">Походить</option>
+                    <option value="sit">Посидеть</option>
+                    <option value="photo">Пофоткаться</option>
+                    <option value="eat">Покушать</option>
+                </select>
+            </div>
+
+            <div class="mood">
+                <span>Настроение:</span>
+                <div class="mood-range">
+                    <i class="fa-solid fa-poop"></i>
+                    <input type="range" min="0" max="98" step="14">
+                    <i class="fa-regular fa-face-laugh-beam"></i>
+                </div>
+            </div>
+
+        </div>
+        <div class="trouble-box">
+            <img src="/assets/images/error.png" alt="Error">
+            <p>Упс, что-то пошло не так.</p>
+            <span></span>
+        </div>
+        <div class="info-box">
+            <div class="weather">
+                <div class="weather__header">
+                    <img src="">
+                    <p class="temperature"></p>
+                    <p class="description"></p>
+                </div>
+
+                <div class="weather__details">
+                    <div class="humidity">
+                        <i class="fa-solid fa-droplet"></i>
+                        <div class="text">
+                            <span></span>
+                            <p>Влажность</p>
+                        </div>
+                    </div>
+
+                    <div class="wind">
+                        <i class="fa-solid fa-wind"></i>
+                        <div class="text">
+                            <span></span>
+                            <p>Скорость ветра</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+    <!-- <script type="text/javascript" src="assets/json/settings.json"></script> -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

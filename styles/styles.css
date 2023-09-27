@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #EEEEEE;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222831;
+    padding: 13px;
+}
+.container{
+    position: relative;
+    min-width: 280px;
+    height: 220px;
+    background-color: #393E46;
+    padding: 15px 15px;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: 0.5s ease-out;
+}
+.settings-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.question-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.question-box i{
+    font-size: 30px;
+    color: #E25E3E;
+}
+.question-box p{
+    font-size: 24px;
+    font-weight: 400;
+}
+.question-box button{
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    color:#222831;
+    background: #EEEEEE;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+.question-box button:hover{
+    color:#EEEEEE;
+    background: #222831;
+}
+.time{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+}
+.time input[type=time]{
+    border: none;
+    border-radius: 3px;
+    background: #EEEEEE;
+    color:#222831;
+}
+.leisure{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+select, option{
+    background: #EEEEEE;
+    color:#222831;
+}
+.leisure select{
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+.mood{
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.mood span{
+    margin-right: 10px;
+}
+.mood input[type=range]{
+    accent-color: #E25E3E;
+    width: 200px;
+}
+.mood i{
+    color: #E25E3E;
+    font-size: 24px;
+}
+.weather__header{
+    text-align: center;
+}
+.weather__header img{
+    width: 50%;
+    /* margin: 30px; */
+}
+.weather__header .temperature{
+    position: relative;
+    font-size: 4rem;
+    font-weight: 800;
+    /* margin-top: 20px; */
+    margin-left: -16px;
+}
+.weather__header .temperature span{
+    position: absolute;
+    margin-left: 4px;
+    font-size: 1.5rem;
+}
+.weather__header .description{
+    font-size: 22px;
+    text-transform: capitalize;
+}
+.weather__details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.weather__details .humidity, .weather__details .wind{
+    display: flex;
+    align-items: center;
+    width: 5%;
+    height: 70px;
+}
+.weather__details .humidity{
+    padding-left: 5px;
+    justify-content: flex-start;
+}
+.weather__details .wind{
+    padding-right: 5px;
+    justify-content: flex-end;
+}
+.weather__details i{
+    font-size: 26px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.weather__details span{
+    font-size: 20px;
+    font-weight: 500;
+}
+.weather__details p{
+    font-size: 14px;
+}
+.trouble-box{
+    width: 100%;
+    text-align: center;
+    scale: 0;
+    opacity: 0;
+    display: none;
+}
+.trouble-box img{
+    width: 70%;
+}
+.trouble-box p{
+    font-size: 22px;
+    text-wrap: balance;
+}
+.weather__header, .weather__details{
+    scale: 0;
+    opacity: 0;
+}
+.fade-in-animation{
+    animation: 0.5s fadeIn forwards;
+    animation-delay: 0.5s;
+}
+@keyframes fadeIn{
+    to{
+        scale: 1;
+        opacity: 1;
+    }
+}
